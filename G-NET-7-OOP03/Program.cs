@@ -53,6 +53,25 @@ namespace G_NET_7_OOP03
             #endregion
 
             #endregion
+
+            #region Part 02 : Practical
+
+            Cinema cinema = new Cinema("Cairo Cinema");
+
+            cinema.OpenCinema();
+
+            Ticket t1 = new StandardTicket("Inception", 120, "A-5");
+            Ticket t2 = new VIPTicket("Avengers", 200, true);
+            Ticket t3 = new IMAXTicket("Dune", 180, false);
+
+            cinema.AddTicket(t1);
+            cinema.AddTicket(t2);
+            cinema.AddTicket(t3);
+
+            cinema.PrintAllTickets();
+
+            cinema.CloseCinema();
+            #endregion
         }
     }
 }
